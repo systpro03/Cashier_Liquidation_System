@@ -3,14 +3,12 @@
 A **web-based management system** designed to automate and streamline the cashier liquidation process — improving accountability, accuracy, and efficiency in daily financial reconciliations.
 
 ---
-
 ## 🚀 Overview
 
 The **Cashier Liquidation System** enables departments and finance units to monitor, validate, and record cashier transactions seamlessly.  
 It ensures that all liquidations, reimbursements, and remittances are properly tracked and audited with complete transparency.
 
 ---
-
 ## 🧩 Key Features
 
 - 🔐 **Secure Login and Role-Based Access Control**  
