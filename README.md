@@ -45,5 +45,3 @@ It ensures that all liquidations, reimbursements, and remittances are properly t
 
 ---
 
-## 🧠 System Architecture
-
