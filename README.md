@@ -25,9 +25,6 @@ It ensures that all liquidations, reimbursements, and remittances are properly t
 - 📊 **Comprehensive Reporting**  
   Generate and export liquidation summaries, balances, and audit trails.
 
-- 🧠 **Error-Resilient Validation**  
-  Prevents duplicate submissions and ensures consistency across departments.
-
 - 🕓 **Real-Time Status Tracking**  
   View pending, approved, or returned liquidations at a glance.
 
