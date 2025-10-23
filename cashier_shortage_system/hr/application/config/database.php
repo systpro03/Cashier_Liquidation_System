@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // 	'dsn'	=> '',
 // 	'hostname' => $_SERVER['SERVER_NAME'],
 // 	'username' => 'root',
-// 	'password' => 'itprog2013',
+// 	'password' => 'thirteen',
 // 	'database' => 'ebs',
 // 	'dbdriver' => 'mysqli',
 // 	'dbprefix' => '',
@@ -95,38 +95,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // 	'save_queries' => TRUE
 // );
 
+
 $active_group = 'ebs';
 $query_builder = TRUE;
 
 $db['ebs'] = array(
 	'dsn'	=> '',
-	'hostname' => $_SERVER['SERVER_NAME'].':3307',
-	'username' => 'ebs',
-	'password' => 'itprog2013',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'ebs',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt'  => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-
-$db['pis'] = array(
-	'dsn'	=> '',
-	'hostname' => $_SERVER['SERVER_NAME'].':3307',
-	'username' => 'pis',
-	'password' => 'itprog2013',
-	'database' => 'pis',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -144,12 +122,12 @@ $db['pis'] = array(
 );
 
 
-$db['vsm'] = array(
+$db['pis'] = array(
 	'dsn'	=> '',
-	'hostname' => $_SERVER['SERVER_NAME'].':3307',
-	'username' => 'vsm',
-	'password' => 'itprog2013',
-	'database' => 'vsm',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'pis',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

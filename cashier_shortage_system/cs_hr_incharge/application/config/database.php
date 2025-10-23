@@ -47,9 +47,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |				'ssl_key'    - Path to the private key file
 |				'ssl_cert'   - Path to the public key certificate file
 |				'ssl_ca'     - Path to the certificate authority file
-|				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
+|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
-|				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
+|				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not
 |
 |	['compress'] Whether or not to use client compression (MySQL only)
 |	['stricton'] TRUE/FALSE - forces 'Strict Mode' connections
@@ -70,14 +70,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+// $active_group = 'ebs';
+// $query_builder = TRUE;
+
+// $db['ebs'] = array(
+// 	'dsn'	=> '',
+// 	'hostname' => $_SERVER['SERVER_NAME'],
+// 	'username' => 'root',
+// 	'password' => 'thirteen',
+// 	'database' => 'ebs',
+// 	'dbdriver' => 'mysqli',
+// 	'dbprefix' => '',
+// 	'pconnect' => FALSE,
+// 	'db_debug' => (ENVIRONMENT !== 'production'),
+// 	'cache_on' => FALSE,
+// 	'cachedir' => '',
+// 	'char_set' => 'utf8',
+// 	'dbcollat' => 'utf8_general_ci',
+// 	'swap_pre' => '',
+// 	'encrypt' => FALSE,
+// 	'compress' => FALSE,
+// 	'stricton' => FALSE,
+// 	'failover' => array(),
+// 	'save_queries' => TRUE
+// );
+
+
 $active_group = 'ebs';
 $query_builder = TRUE;
 
 $db['ebs'] = array(
 	'dsn'	=> '',
-	'hostname' => $_SERVER['SERVER_NAME'].':3307',
-	'username' => 'ebs',
-	'password' => 'itprog2013',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'ebs',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -98,9 +124,9 @@ $db['ebs'] = array(
 
 $db['pis'] = array(
 	'dsn'	=> '',
-	'hostname' => $_SERVER['SERVER_NAME'].':3307',
-	'username' => 'pis',
-	'password' => 'itprog2013',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'pis',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
