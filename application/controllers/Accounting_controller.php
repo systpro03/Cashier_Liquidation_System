@@ -1736,7 +1736,7 @@ public function upload_file_ctrl_v2()
                 {
                     $fileExt = '';
                     $fileName2 = $_FILES['files']['name'][$i];
-                    $fileExt = pathinfo($fileName2, PATHINFO_EXTENSION); // get the file extension
+                    $fileExt = pathinfo($fileName2, PATHINFO_EXTENSION);
 
                     if ($fileExt == 'txt' || $fileExt == 'TXT') {
                         unset($RESS2);/*clear ang sulod sa array para inig loop sa sunod textfile dili mu sumpay ang sulod*/
@@ -1751,14 +1751,12 @@ public function upload_file_ctrl_v2()
                             }
                         endif;
                         // ==================================================================================
-                        // $ress_sanitize = explode(PHP_EOL, $RESS2);
-                        // Process the input text file
+
                         $RESS2 = preg_replace('/","/', "^", $RESS2);
                         $RESS2 = preg_replace('/"/', "@", $RESS2);
                         $RESS2 = explode('@', $RESS2);
                         $RESS2 = array_map('trim', $RESS2);
 
-                        // Initialize validation variables
                         $validation_explode = '';
                         $validation_originalDate = '';
                         $validation_year = '';
